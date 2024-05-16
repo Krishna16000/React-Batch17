@@ -1,0 +1,71 @@
+h1{
+    margin-left: 650px;
+    color: green;
+}
+
+
+/* div {
+  color: brown;
+  /* margin: 10px; */
+label{
+    display: block;
+
+}
+/* .container{
+    margin-left: 500px;
+    height: 50px;
+    background-color: lightgreen;
+    margin-right: 478px;
+    
+} */
+.title{
+    margin-left: 500px;
+    height: 50px;
+    background-color: lightgreen;
+    margin-right: 478px;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+/* #div1 {
+    margin-left: 500px;
+    height:100px;
+    margin-right: 450px;
+    input[type=text] {
+        width: 93%;height: 30px;
+    }
+} */
+#div2{
+    margin-left: 500px;
+    /* height: 50px; */
+    input[type=text] {
+        width: 50%;height: 30px;
+    }
+}
+#div3{
+    margin-left: 500px;
+}
+
+
+
+/* .title{
+    height: 50px;
+    margin-right: 478px;
+    background-color: lightgreen;
+    text-align: center;
+
+} */
+/* .container{
+    margin-left: 500px;
+}
+.email{
+    width: 100%;
+}
+input[type=text] {
+    width: 50%;height: 30px;
+}
+  /* .div1{
+         display:inline;
+        display: inline-block;
+      } */
