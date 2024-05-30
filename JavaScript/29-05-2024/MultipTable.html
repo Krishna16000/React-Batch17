@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" />
+    <button onclick="showData()">Click</button>
+    <div id="dom"></div>
+    
+</body>
+<script>
+    
+     function showData() {
+        var getInputVal = document.getElementById("input").value;
+        document.getElementById("dom").innerHTML =   
+      " <div><h1>" + getInputVal  + "</h1></div>";
+
+      for(let i= 1; i<=10;i++){
+       const result = i * getInputVal;
+   
+         document.getElementById("dom").innerHTML =   
+          " <div><h1>" + getInputVal * i  + "</h1></div>";
+         console.log(getInputVal* i)= result;
+         console.log(`${getInputVal} * ${i} = ${result}`);
+     }
+    }
+    
+   
+    //  }
+    //  showData(getInputVal);
+    
+    //  console.log(`${getInputVal} * ${i} = ${result}`);
+    //  console.log(getInputVal* i)= result;
+
+</script>
+</html>

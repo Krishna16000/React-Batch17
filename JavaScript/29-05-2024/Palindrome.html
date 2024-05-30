@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id=" ip1"/>
+    <button onclick="Palindrome()">Click</button>
+    <div id="dom"></div>
+    <script>
+        function Palindrome(){
+            var input1= document.getElementById("ip1").value;
+            console.log(input1);
+            let reverse= " ";
+            for(let i=input1.length - 1; i>=0; i--){
+            reverse= reverse + input1[i];
+            }
+            if(reverse == input1){
+            document.getElementById("dom").innerHTML= `${reverse} is a palindrome`;
+            } else{
+            document.getElementById("dom").innerHTML= `${reverse} is not palindrome`;
+        }
+       
+    }
+      
+    </script>  
+</body>
+
+</html>

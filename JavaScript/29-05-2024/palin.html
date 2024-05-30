@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js masterry</title>
+    <style>
+      h1 {
+        color: aqua;
+        text-align: center;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="ip1" />
+    <button onclick="func()">click</button>
+    <div id="demo"></div>
+    <script>
+      function func() {
+        var input1 = document.getElementById("ip1").value;
+        //console.log(input1);
+        let rev = "";
+        for (let i = input1.length - 1; i >= 0; i--) {
+          rev = rev + input1[i]; //hard-->rev=rev +str[3]-->rev='drah'
+        }
+        if (rev == input1) {
+          document.getElementById("demo").innerHTML = `${rev} is a palindrome`;
+        } else {
+          document.getElementById(
+            "demo"
+          ).innerHTML =` ${rev} is not a palindrome`;
+        }
+      }
+    </script>
+  </body>
+</html>
