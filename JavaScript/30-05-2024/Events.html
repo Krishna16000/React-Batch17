@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="dbClick()" id="dom">Click</button>
+  keyup:<input type="text" id="dom1" onkeyup="keyup()"/>
+  keydown: <input type = "text" id = "dom2" onkeydown="keydown()"/>
+  <!-- <div id= " demo"></div> -->
+  <div id= "demo1"></div>
+  <div id= "demo2"></div>
+  
+</body>
+<script>
+  function dbClick(){
+    console.log("double click event handler");
+    // var input = document.getElementById("dom").value;
+    // document.getElementById("demo").innerHTML= input;
+  }
+  function keyup(){
+    console.log("keyup event is firing...");
+    var input1 = document.getElementById("dom1").value;
+    document.getElementById("demo1").innerHTML= input1;
+  }
+  function keydown(){
+    console.log("keydown event is firing ");
+    var input2 = document.getElementById("dom2").value;
+    document.getElementById("demo2").innerHTML= input2;
+  }
+</script>
+</html>
