@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type=" text"/>
+    <input type="text"/>
+    <button>click</button> -->
+</body>
+<script>
+    var str = "Hello React abc";
+    var rstr = "hello abc hello world abc test react js, angular js, vew js";
+    console.log("string length", str.charAt(1));
+    console.log("string lenghth", rstr.charAt(6));
+    var name= "my name is krishna";
+    var merge = str.concat("and", name, "React world");
+    // console.log(str + 'and' + name);
+    console.log(merge);
+    console.log("index value>>", str.indexOf("React"));
+    console.log("index value>>", str.lastIndexOf("e"));
+    console.log("includes>>", str.includes("r"));
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+    var newstr = rstr.replace("hello", "hi");
+    var allReplace = rstr.replaceAll("hello", "hi");
+    console.log(newstr);
+    console.log(allReplace);
+    var ear = str.split("");
+    console.log(ear);
+    var subss = str.substr(2, 7);
+    console.log("sub string..", subss);
+    var abc= "    Bangalore    ";
+    console.log(abc.trim().length);
+    console.log(abc.length);
+</script>
+</html>
