@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id=" ip"/>
+        <input type="text" id=" ip1"/>
+        <!-- <input type="text" id=" ip2"/> -->
+        <button id="b">click</button>
+    </div>
+    
+</body>
+<script>
+    function copy(){
+        var str = document.getElementById("ip").value;
+        document.getElementById("ip").innerHTML=str.toUpperCase;
+    }
+
+    var str1= document.getElementById("ip1").value;
+    strsp = str1.split("");
+    // for( let i= 0; i<=strsp.length - 1; i++)
+    // {
+    //     document.getElementById("b").onclick= function transfer(){
+    //         document.getElementById("ip2").value= strsp[i];
+    //     }
+    // }
+</script>
+</html>

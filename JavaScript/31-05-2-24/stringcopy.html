@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1" oninput="copyText()">
+    <input type="text" id="input2" oninput="copyText()">
+    <button onclick="clearText()">clear</button>
+
+</body>
+<script>
+    
+  function copyText(){
+	  var text=document.getElementById("input1").value;
+	  document.getElementById("input2").value=text;
+	  }
+	  function clearText(){
+		  document.getElementById("input1").value="";
+		  document.getElementById("input2").value="";
+		  }
+        //   function copyText1(){
+        //    var text=  document.getElementById("input2").value;
+        //     document.getElementById("input1").value=text;
+        //   }
+
+
+</script>
+</html>
