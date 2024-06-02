@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output1"></div>
+
+    
+</body>
+<script>
+    var str = "hello react js world";
+    var words= str.split(" ");
+    var content = " ";
+    for(var i=0; i<words.length; i++){
+        var w = words[i][0].toUpperCase();
+       var capitalword=w+words[i].substring(1);
+       content= content+capitalword+" ";
+    }
+    document.getElementById("output1").innerHTML=content;
+   
+</script>
+</html>
