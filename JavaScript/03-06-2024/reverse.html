@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter text" id="input1"/>
+    <button onclick="reverse()">click</button>
+    <p id="input2"></p>
+</body>
+<script>
+    function reverse(){
+        var str= document.getElementById("input1").value;
+        var ar= str.split(" ");
+        var empstr= " ";
+        for(let i=0; i<=ar.length-1; i++){
+            var w= ar[i];
+            var empstr1 = " ";
+            for(let j=w.length-1; j>=0; j--){
+                empstr1 +=w[j];
+
+            }
+            empstr +=empstr1 +" ";
+        }
+        document.getElementById("input2").innerHTML= empstr;
+    }
+</script>
+</html>
