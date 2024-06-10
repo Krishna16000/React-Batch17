@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="country" onchange="getCities()">
+    <option>select country</option>
+<option value="1">India</option>
+<option value="2">Australia</option></select>
+<div id="demo"></div>
+    
+</body>
+<script>
+    function getCities(){
+        var countrySelect = document.getElementById("country").value;
+        console.log(typeof countrySelect)
+        var cityList = document.createElement("select");
+        cityList.innerHTML = " ";
+        var cities = {
+            "1": ["Andhra Pradesh", "Tamilnadu","karnataka","maharashtra"],
+            "2": ["sydney", "melbourne","canberra","perth"],
+        };
+        var cityOptions = cities[countrySelect]; //["Andhra Pradesh", "Tamilnadu","karnataka","maharashtra"],
+        for(var i=0; i<cityOptions.length; i++){
+            var option = document.createElement("option");
+            option.text = cityOptions[i];
+            cityList.append(option);
+        }
+        document.getElementById("demo").append(cityList);
+    }
+</script>
+</html>
