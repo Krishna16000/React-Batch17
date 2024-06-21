@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 // import Hello from './components/Hello';
 // import StatesEvents from './components/StateEvents';
-import Count from './components/Count'
+// import Count from './components/Count'
+import AddToList from './components/AddToList';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
     // </div>
     // <Hello/>
     // <StatesEvents/>
-    <Count/>
+    // <Count/>
+    <AddToList/>
   );
 }
 
