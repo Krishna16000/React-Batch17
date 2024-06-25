@@ -4,6 +4,8 @@
 // import StatesEvents from './components/StateEvents';
 // import Count from './components/Count'
 import AddToList from './components/AddToList';
+// import ComponentA from './components/ComponentA';
+// import CondationALRendering from'./components/CondationALRendering';
 // import InputHandler from './components/InputHandler';
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
     // <Count/>
     <AddToList/>
     // <InputHandler/>
+    // <ComponentA/>
+    // <CondationALRendering/>
   );
 }
 

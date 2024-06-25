@@ -26,8 +26,9 @@ function AddToList() {
     }
     const deletebtn= (index) => {
 
-        // const newList = [...userList]
-        setUserList(userList.splice(index, 1))
+        const newList = [...userList]
+        newList.splice(index, 1)
+        setUserList(newList)
     }
     return (
         <div>
