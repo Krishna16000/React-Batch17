@@ -5,6 +5,7 @@ function AddToList() {
     const [userList, setUserList] = useState([])
     const [userName, setUserName] = useState("")
     const InputFormHandler = (event) => {
+        console.log(event);
         const { value } = event.target;
         setUserName(value)
 
@@ -23,12 +24,17 @@ function AddToList() {
         setUserList(newList)
         setUserName("")
     }
+    const deletebtn= (index) => {
+
+        // const newList = [...userList]
+        setUserList(userList.splice(index, 1))
+    }
     return (
         <div>
             <h2 className="list">AddToList</h2>
             <div>
                 <label>Name:</label>
-                <input type="text" onChange={InputFormHandler} value={userName} />
+                <input type="text" onChange={InputFormHandler} value={userName}/>
                 <button onClick={AddToDoList} style={{ backgroundColor: 'blue', fontSize: "20px" }}>Add</button>
                 <table>
                     <thead>
@@ -43,7 +49,7 @@ function AddToList() {
                             <tr key={i}>
                                 <td>{i + 1}</td>
                                 <td>{items}</td>
-                                <td><button>Delete</button></td>
+                                <td><button onClick={()=>deletebtn(i)}>Delete</button></td>
                             </tr>
                         ))}
 

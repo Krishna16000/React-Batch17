@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+
+// import './App.css';
 // import Hello from './components/Hello';
 // import StatesEvents from './components/StateEvents';
 // import Count from './components/Count'
 import AddToList from './components/AddToList';
+// import InputHandler from './components/InputHandler';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
     // <StatesEvents/>
     // <Count/>
     <AddToList/>
+    // <InputHandler/>
   );
 }
 
