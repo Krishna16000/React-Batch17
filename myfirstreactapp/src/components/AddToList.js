@@ -20,7 +20,7 @@ function AddToList() {
             alert('already exist enter a new value')
             return
         }
-        newList.push(userName);
+        newList.push(userName);  
         setUserList(newList)
         setUserName("")
     }

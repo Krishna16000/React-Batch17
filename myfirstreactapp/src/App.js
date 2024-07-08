@@ -3,10 +3,12 @@
 // import Hello from './components/Hello';
 // import StatesEvents from './components/StateEvents';
 // import Count from './components/Count'
-import AddToList from './components/AddToList';
+// import AddToList from './components/AddToList';
+import Table from './components/Table';
 // import ComponentA from './components/ComponentA';
 // import CondationALRendering from'./components/CondationALRendering';
 // import InputHandler from './components/InputHandler';
+// import Usestate from './components/Usestate';
 
 function App() {
   return (
@@ -29,10 +31,12 @@ function App() {
     // <Hello/>
     // <StatesEvents/>
     // <Count/>
-    <AddToList/>
+    // <AddToList/>
     // <InputHandler/>
     // <ComponentA/>
     // <CondationALRendering/>
+    <Table/>
+    // <Usestate/>
   );
 }
 
