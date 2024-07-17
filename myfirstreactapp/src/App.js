@@ -4,14 +4,16 @@
 // import StatesEvents from './components/StateEvents';
 // import Count from './components/Count'
 // import AddToList from './components/AddToList';
-import Table from './components/Table';
+// import Table from './components/Table';
 // import ComponentA from './components/ComponentA';
 // import CondationALRendering from'./components/CondationALRendering';
 // import InputHandler from './components/InputHandler';
-// import Usestate from './components/Usestate';
+// import Usestate from "./components/Usestate";
+// import Myexample from './components/Myexample';
+import Parent from './components/Parent';
 
 function App() {
-  return (
+  
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
@@ -35,8 +37,11 @@ function App() {
     // <InputHandler/>
     // <ComponentA/>
     // <CondationALRendering/>
-    <Table/>
+    // <Table/>
     // <Usestate/>
+    return (
+      <Parent/>
+    
   );
 }
 
