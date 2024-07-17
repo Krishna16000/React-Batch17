@@ -10,7 +10,8 @@
 // import InputHandler from './components/InputHandler';
 // import Usestate from "./components/Usestate";
 // import Myexample from './components/Myexample';
-import Parent from './components/Parent';
+// import Parent from './components/Parent';
+import Task from "./components/Task17july";
 
 function App() {
   
@@ -40,7 +41,8 @@ function App() {
     // <Table/>
     // <Usestate/>
     return (
-      <Parent/>
+      // <Parent/>
+      <Task/>
     
   );
 }
