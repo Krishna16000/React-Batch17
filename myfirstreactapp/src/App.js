@@ -11,7 +11,8 @@
 // import Usestate from "./components/Usestate";
 // import Myexample from './components/Myexample';
 // import Parent from './components/Parent';
-import Task from "./components/Task17july";
+// import Task from "./components/Task17july";
+import Useeffect from './components/Useeffect';
 
 function App() {
   
@@ -42,7 +43,8 @@ function App() {
     // <Usestate/>
     return (
       // <Parent/>
-      <Task/>
+      // <Task/>
+      <Useeffect/>
     
   );
 }
