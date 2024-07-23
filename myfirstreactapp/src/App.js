@@ -12,7 +12,8 @@
 // import Myexample from './components/Myexample';
 // import Parent from './components/Parent';
 // import Task from "./components/Task17july";
-import Useeffect from './components/Useeffect';
+// import Useeffect from './components/Useeffect';
+import MemoHook from './components/MemoHook';
 
 function App() {
   
@@ -44,7 +45,8 @@ function App() {
     return (
       // <Parent/>
       // <Task/>
-      <Useeffect/>
+      // <Useeffect/>
+      <MemoHook/>
     
   );
 }
