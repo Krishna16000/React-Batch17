@@ -13,7 +13,12 @@
 // import Parent from './components/Parent';
 // import Task from "./components/Task17july";
 // import Useeffect from './components/Useeffect';
-import MemoHook from './components/MemoHook';
+// import MemoHook from './components/MemoHook';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import About from './components/About';
+import Prodcts from './components/Product';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   
@@ -46,7 +51,22 @@ function App() {
       // <Parent/>
       // <Task/>
       // <Useeffect/>
-      <MemoHook/>
+      // <MemoHook/>
+      <BrowserRouter>
+      <div>
+        <li><Link to={'/'}>Home</Link></li>
+        <li><Link to={'/About'}>About us</Link></li>
+        <li><Link to={'/Contact'}>Contact us</Link></li>
+        <li><Link to={'/Prodcts'}>Prodcts List</Link></li>
+        {/* <Outlet /> */}
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Prodcts" element={<Prodcts />} />
+      </Routes>
+    </BrowserRouter>
     
   );
 }
