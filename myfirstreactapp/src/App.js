@@ -19,6 +19,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Prodcts from './components/Product';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import CounterRedux from './components/CounterRedux';
 
 function App() {
   
@@ -39,7 +40,7 @@ function App() {
     //   </header>
     // </div>
     // <Hello/>
-    // <StatesEvents/>
+   
     // <Count/>
     // <AddToList/>
     // <InputHandler/>
@@ -47,19 +48,23 @@ function App() {
     // <CondationALRendering/>
     // <Table/>
     // <Usestate/>
+    // <StateEvents/>
     return (
       // <Parent/>
       // <Task/>
       // <Useeffect/>
       // <MemoHook/>
+      <div>
       <BrowserRouter>
       <div>
+      
         <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'/About'}>About us</Link></li>
         <li><Link to={'/Contact'}>Contact us</Link></li>
         <li><Link to={'/Prodcts'}>Prodcts List</Link></li>
         {/* <Outlet /> */}
-      </div>
+        </div>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
@@ -67,6 +72,13 @@ function App() {
         <Route path="/Prodcts" element={<Prodcts />} />
       </Routes>
     </BrowserRouter>
+    <CounterRedux/>
+  </div>
+ 
+  
+   
+  
+   
     
   );
 }
