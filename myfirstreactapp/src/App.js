@@ -5,7 +5,7 @@
 // import Count from './components/Count'
 // import AddToList from './components/AddToList';
 // import Table from './components/Table';
-// import ComponentA from './components/ComponentA';
+import ComponentA from './components/ComponentA';
 // import CondationALRendering from'./components/CondationALRendering';
 // import InputHandler from './components/InputHandler';
 // import Usestate from "./components/Usestate";
@@ -14,12 +14,12 @@
 // import Task from "./components/Task17july";
 // import Useeffect from './components/Useeffect';
 // import MemoHook from './components/MemoHook';
-import Home from './components/Home';
-import Contact from './components/Contact';
-import About from './components/About';
-import Prodcts from './components/Product';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import CounterRedux from './components/CounterRedux';
+// import Home from './components/Home';
+// import Contact from './components/Contact';
+// import About from './components/About';
+// import Prodcts from './components/Product';
+// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+// import CounterRedux from './components/CounterRedux';
 
 function App() {
   
@@ -44,36 +44,37 @@ function App() {
     // <Count/>
     // <AddToList/>
     // <InputHandler/>
-    // <ComponentA/>
+  
     // <CondationALRendering/>
     // <Table/>
     // <Usestate/>
     // <StateEvents/>
     return (
-      // <Parent/>
+      <div>
+          // <ComponentA/>
+      {/* // <Parent/>
       // <Task/>
-      // <Useeffect/>
-      // <MemoHook/>
-      <div>
-      <BrowserRouter>
-      <div>
-      
-        <li><Link to={'/'}>Home</Link></li>
-        <li><Link to={'/About'}>About us</Link></li>
-        <li><Link to={'/Contact'}>Contact us</Link></li>
-        <li><Link to={'/Prodcts'}>Prodcts List</Link></li>
-        {/* <Outlet /> */}
-        </div>
-      
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Prodcts" element={<Prodcts />} />
-      </Routes>
+      // <Useeffect/> */}
+   
+           {/* <MemoHook/> */}
+      {/* <BrowserRouter> */}
+            
+      {/* <div>
+          <li><Link to={'/'}>Home</Link></li>
+          <li><Link to={'/About'}>About us</Link></li>
+          <li><Link to={'/Contact'}>Contact us</Link></li>
+          <li><Link to={'/Prodcts'}>Prodcts List</Link></li>
+        </div> */}
+        {/* <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Prodcts" element={<Prodcts />} />
+        </Routes>
     </BrowserRouter>
-    <CounterRedux/>
-  </div>
+    <CounterRedux/>  */}
+    </div>
+
  
   
    

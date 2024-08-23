@@ -5,6 +5,7 @@ function MemoHooks() {
     const [count, setCount] = useState(0);
     const [age, setAge] = useState(0);
     const calcutionValues =  useMemo(() => calcutions(), [])
+    // const calcution = calcutions()
     // const calcution = useMemo(() => {
     //     return calcutions();
     // }, [])
@@ -14,7 +15,7 @@ function MemoHooks() {
             <h1>MemoHooks</h1>
             <h2>count:{count}</h2>
             <h2>Age:{age}</h2>
-            <h3>Caluclation:{calcutionValues}</h3>
+            {/* <h3>Caluclation:{calcutionValues}</h3> */}
 
             <button onClick={() => setCount(count + 1)}>Countrer</button>
             <button onClick={() => setAge(age + 5)}>Age</button>
