@@ -5,7 +5,7 @@
 // import Count from './components/Count'
 // import AddToList from './components/AddToList';
 // import Table from './components/Table';
-import ComponentA from './components/ComponentA';
+// import ComponentA from './components/ComponentA';
 // import CondationALRendering from'./components/CondationALRendering';
 // import InputHandler from './components/InputHandler';
 // import Usestate from "./components/Usestate";
@@ -13,6 +13,7 @@ import ComponentA from './components/ComponentA';
 // import Parent from './components/Parent';
 // import Task from "./components/Task17july";
 // import Useeffect from './components/Useeffect';
+import Usestate from './components/Usestate';
 // import MemoHook from './components/MemoHook';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -20,6 +21,7 @@ import ComponentA from './components/ComponentA';
 // import Prodcts from './components/Product';
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 // import CounterRedux from './components/CounterRedux';
+// import EventHandler from './components/EventHandler';
 
 function App() {
   
@@ -50,11 +52,15 @@ function App() {
     // <Usestate/>
     // <StateEvents/>
     return (
+    
       <div>
-          // <ComponentA/>
+        <Usestate/>
+        {/* <Useeffect/> */}
+        {/* <EventHandler/> */}
+          {/* // <ComponentA/> */}
       {/* // <Parent/>
       // <Task/>
-      // <Useeffect/> */}
+  
    
            {/* <MemoHook/> */}
       {/* <BrowserRouter> */}
