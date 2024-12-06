@@ -13,7 +13,8 @@
 // import Parent from './components/Parent';
 // import Task from "./components/Task17july";
 // import Useeffect from './components/Useeffect';
-import Usestate from './components/Usestate';
+// import Usestate from './components/Usestate';
+import Onchange from './components/Onchange';
 // import MemoHook from './components/MemoHook';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -54,7 +55,8 @@ function App() {
     return (
     
       <div>
-        <Usestate/>
+        <Onchange/>
+        {/* <Usestate/> */}
         {/* <Useeffect/> */}
         {/* <EventHandler/> */}
           {/* // <ComponentA/> */}
