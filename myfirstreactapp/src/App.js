@@ -15,7 +15,8 @@
 // import Useeffect from './components/Useeffect';
 // import Usestate from './components/Usestate';
 // import Onchange from './components/Onchange';
-import Onsubmit from'./components/Onsubmit';
+// import Onsubmit from'./components/Onsubmit';
+import Map from './components/Map';
 // import MemoHook from './components/MemoHook';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -57,7 +58,8 @@ function App() {
     
       <div>
         {/* <Onchange/> */}
-        <Onsubmit/>
+        {/* <Onsubmit/> */}
+        <Map/>
         {/* <Usestate/> */}
         {/* <Useeffect/> */}
         {/* <EventHandler/> */}
