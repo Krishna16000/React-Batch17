@@ -14,7 +14,8 @@
 // import Task from "./components/Task17july";
 // import Useeffect from './components/Useeffect';
 // import Usestate from './components/Usestate';
-import Onchange from './components/Onchange';
+// import Onchange from './components/Onchange';
+import Onsubmit from'./components/Onsubmit';
 // import MemoHook from './components/MemoHook';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -55,7 +56,8 @@ function App() {
     return (
     
       <div>
-        <Onchange/>
+        {/* <Onchange/> */}
+        <Onsubmit/>
         {/* <Usestate/> */}
         {/* <Useeffect/> */}
         {/* <EventHandler/> */}
