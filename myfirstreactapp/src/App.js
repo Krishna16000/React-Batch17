@@ -17,6 +17,7 @@
 // import Onchange from './components/Onchange';
 // import Onsubmit from'./components/Onsubmit';
 import Map from './components/Map';
+import Filter from './components/Filter';
 // import MemoHook from './components/MemoHook';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -59,7 +60,8 @@ function App() {
       <div>
         {/* <Onchange/> */}
         {/* <Onsubmit/> */}
-        <Map/>
+        {/* <Map/> */}
+        <Filter/>
         {/* <Usestate/> */}
         {/* <Useeffect/> */}
         {/* <EventHandler/> */}
