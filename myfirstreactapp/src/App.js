@@ -16,8 +16,9 @@
 // import Usestate from './components/Usestate';
 // import Onchange from './components/Onchange';
 // import Onsubmit from'./components/Onsubmit';
-import Map from './components/Map';
-import Filter from './components/Filter';
+// import Map from './components/Map';
+// import Filter from './components/Filter';
+import Fetch from './components/Fetch';
 // import MemoHook from './components/MemoHook';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -61,7 +62,8 @@ function App() {
         {/* <Onchange/> */}
         {/* <Onsubmit/> */}
         {/* <Map/> */}
-        <Filter/>
+        {/* <Filter/> */}
+        <Fetch/>
         {/* <Usestate/> */}
         {/* <Useeffect/> */}
         {/* <EventHandler/> */}
