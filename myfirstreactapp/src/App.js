@@ -18,7 +18,8 @@
 // import Onsubmit from'./components/Onsubmit';
 // import Map from './components/Map';
 // import Filter from './components/Filter';
-import Fetch from './components/Fetch';
+// import Fetch from './components/Fetch';
+import Axios from './components/Axios';
 // import MemoHook from './components/MemoHook';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -63,7 +64,8 @@ function App() {
         {/* <Onsubmit/> */}
         {/* <Map/> */}
         {/* <Filter/> */}
-        <Fetch/>
+        {/* <Fetch/> */}
+        <Axios/>
         {/* <Usestate/> */}
         {/* <Useeffect/> */}
         {/* <EventHandler/> */}
