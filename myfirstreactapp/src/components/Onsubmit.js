@@ -19,7 +19,7 @@ function App(){
             <center>
                 <form onSubmit={submitHandler}>
                 <input type="text" name="username" value={username}
-                onChange={onchange} placeholder="Username"/><br/>
+                onChange={onChange} placeholder="Username"/><br/>
 
                 <input type="password" name="password" value={password}
                 onChange={onChange} placeholder="Password"/><br/>
