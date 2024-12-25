@@ -19,7 +19,11 @@
 // import Map from './components/Map';
 // import Filter from './components/Filter';
 // import Fetch from './components/Fetch';
-import Axios from './components/Axios';
+// import Axios from './components/Axios';
+import FirstComp from './components/FirstComp';
+import FourthComp from './components/FourthComp';
+import SecondComp from './components/SecondComp';
+import ThirdComp from './components/ThirdComp';
 // import MemoHook from './components/MemoHook';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -29,7 +33,13 @@ import Axios from './components/Axios';
 // import CounterRedux from './components/CounterRedux';
 // import EventHandler from './components/EventHandler';
 
+const user={
+  name:"siva",
+  city:"Hyderabad",
+  area:"Hitech city"
+}
 function App() {
+  
   
     // <div className="App">
     //   <header className="App-header">
@@ -65,7 +75,11 @@ function App() {
         {/* <Map/> */}
         {/* <Filter/> */}
         {/* <Fetch/> */}
-        <Axios/>
+        {/* <Axios/> */}
+        <FirstComp name={user.name}/>
+        <SecondComp name={user.area}/>
+        <ThirdComp name="Reddy"/>
+        <FourthComp name={user.city}/>
         {/* <Usestate/> */}
         {/* <Useeffect/> */}
         {/* <EventHandler/> */}
