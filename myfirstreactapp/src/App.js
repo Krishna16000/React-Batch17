@@ -34,9 +34,9 @@ import ThirdComp from './components/ThirdComp';
 // import EventHandler from './components/EventHandler';
 
 const user={
-  name:"siva",
-  city:"Hyderabad",
-  area:"Hitech city"
+  name:"Krishnakanth",
+  city:"Bangalore",
+  area:"MG Road"
 }
 function App() {
   
@@ -76,10 +76,10 @@ function App() {
         {/* <Filter/> */}
         {/* <Fetch/> */}
         {/* <Axios/> */}
-        <FirstComp name={user.name}/>
-        <SecondComp name={user.area}/>
-        <ThirdComp name="Reddy"/>
-        <FourthComp name={user.city}/>
+      <FirstComp name={user.name}/>
+      <SecondComp name={user.area}/>
+      <ThirdComp name= {user.city}/>
+      <FourthComp name= "Reddy"/>
         {/* <Usestate/> */}
         {/* <Useeffect/> */}
         {/* <EventHandler/> */}

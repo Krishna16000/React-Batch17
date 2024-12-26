@@ -1,12 +1,11 @@
-
-
 import React from "react";
 
-const FirstComp = (props) => {
+const FirstComp = (props) =>{
     console.log(props)
-    return (
+    return(
         <div>{props.name}</div>
+        
     )
 }
 
-export default FirstComp;
+export default FirstComp
