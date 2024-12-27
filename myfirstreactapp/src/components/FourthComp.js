@@ -1,9 +1,12 @@
 import React from "react";
 
-const FourthComp = (props) =>{
+const FourthComp = (props)=>
+{
     return(
-        <div>{props.name}</div>
+        <div>
+            {props.name}
+        </div>
     )
 }
 
-export default FourthComp
+export default FourthComp;

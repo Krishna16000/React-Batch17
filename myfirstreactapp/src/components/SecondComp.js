@@ -2,8 +2,10 @@ import React from "react";
 
 const SecondComp = (props) =>{
     return(
-        <div>{props.name}</div>
+        <div>
+            {props.name}
+
+        </div>
     )
 }
-
-export default SecondComp
+export default SecondComp;

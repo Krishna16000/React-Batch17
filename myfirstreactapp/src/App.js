@@ -21,9 +21,9 @@
 // import Fetch from './components/Fetch';
 // import Axios from './components/Axios';
 import FirstComp from './components/FirstComp';
-import FourthComp from './components/FourthComp';
 import SecondComp from './components/SecondComp';
 import ThirdComp from './components/ThirdComp';
+import FourthComp from './components/FourthComp';
 // import MemoHook from './components/MemoHook';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -35,8 +35,8 @@ import ThirdComp from './components/ThirdComp';
 
 const user={
   name:"Krishnakanth",
-  city:"Bangalore",
-  area:"MG Road"
+  city:"Pune",
+  area:"sivaji nagar"
 }
 function App() {
   
@@ -76,10 +76,11 @@ function App() {
         {/* <Filter/> */}
         {/* <Fetch/> */}
         {/* <Axios/> */}
-      <FirstComp name={user.name}/>
-      <SecondComp name={user.area}/>
-      <ThirdComp name= {user.city}/>
-      <FourthComp name= "Reddy"/>
+        <FirstComp name={user.name}/>
+        <SecondComp name={user.area}/>
+        <ThirdComp name={user.city}/>
+        <FourthComp name="Reddy"/>
+ 
         {/* <Usestate/> */}
         {/* <Useeffect/> */}
         {/* <EventHandler/> */}

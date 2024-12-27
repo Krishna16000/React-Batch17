@@ -1,6 +1,5 @@
 import React from "react";
-
-const ThirdComp = (props) =>{
+const ThirdComp = (props)=>{
     return(
         <div>{props.name}</div>
     )
