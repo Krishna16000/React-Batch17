@@ -20,10 +20,14 @@
 // import Filter from './components/Filter';
 // import Fetch from './components/Fetch';
 // import Axios from './components/Axios';
-import FirstComp from './components/FirstComp';
-import SecondComp from './components/SecondComp';
-import ThirdComp from './components/ThirdComp';
-import FourthComp from './components/FourthComp';
+// import FirstComp from './components/FirstComp';
+// import SecondComp from './components/SecondComp';
+// import ThirdComp from './components/ThirdComp';
+// import FourthComp from './components/FourthComp';
+import React,{createContext, useState} from "react";
+import Component1 from "./components/Component1";
+import Component2 from "./components/Component2";
+export const store = createContext();
 // import MemoHook from './components/MemoHook';
 // import Home from './components/Home';
 // import Contact from './components/Contact';
@@ -33,12 +37,20 @@ import FourthComp from './components/FourthComp';
 // import CounterRedux from './components/CounterRedux';
 // import EventHandler from './components/EventHandler';
 
-const user={
-  name:"Krishnakanth",
-  city:"Pune",
-  area:"sivaji nagar"
-}
+// const user={
+//   name:"Krishnakanth",
+//   city:"Pune",
+//   area:"sivaji nagar"
+// }
 function App() {
+  const [data, setData] = useState([
+    
+      "Nokia",
+      "Samsung",
+      "Realme"
+  
+  ]);
+  
   
   
     // <div className="App">
@@ -76,10 +88,21 @@ function App() {
         {/* <Filter/> */}
         {/* <Fetch/> */}
         {/* <Axios/> */}
-        <FirstComp name={user.name}/>
+        {/* <FirstComp name={user.name}/>
         <SecondComp name={user.area}/>
         <ThirdComp name={user.city}/>
-        <FourthComp name="Reddy"/>
+        <FourthComp name="Reddy"/> */}
+
+          <store.Provider value={[data,setData]}>
+          <center>
+        <Component1/>
+        <Component2/>
+        <button onClick={()=>setData(data+1)}>Increment</button>
+        </center>
+        </store.Provider>
+        
+        
+
  
         {/* <Usestate/> */}
         {/* <Useeffect/> */}
