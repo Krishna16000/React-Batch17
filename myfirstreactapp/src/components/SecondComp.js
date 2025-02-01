@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
-const SecondComp = (props) =>{
+const SecondComp= (props)=>{
     return(
         <div>
-            {props.name}
-
+            {props.variable}
         </div>
     )
 }
+
 export default SecondComp;
