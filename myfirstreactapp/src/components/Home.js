@@ -3,11 +3,11 @@ import { useEffect } from "react"
 
 function Home() {
 
-    useEffect(() => {
-        return () => {
-            alert('Hello')
-        }
-    }, [])
+    // useEffect(() => {
+    //     return () => {
+    //         alert('Hello')
+    //     }
+    // }, [])
 
 
     return (

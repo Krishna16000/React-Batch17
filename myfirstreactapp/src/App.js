@@ -20,29 +20,37 @@
 // import Filter from './components/Filter';
 // import Fetch from './components/Fetch';
 // import Axios from './components/Axios';
-import FirstComp from './components/FirstComp';
-import SecondComp from './components/SecondComp';
-import ThirdComp from './components/ThirdComp';
-import FourthComp from './components/FourthComp';
+// import FirstComp from './components/FirstComp';
+// import SecondComp from './components/SecondComp';
+// import ThirdComp from './components/ThirdComp';
+// import FourthComp from './components/FourthComp';
 // import React,{createContext, useState} from "react";
 // import Component1 from "./components/Component1";
 // import Component2 from "./components/Component2";
 // export const store = createContext();
 // import MemoHook from './components/MemoHook';
-// import Home from './components/Home';
-// import Contact from './components/Contact';
+// import Home from "./components/Home";
 // import About from './components/About';
-// import Prodcts from './components/Product';
-// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+// import Product from './components/Product'
+// import Contact from "./components/Contact";
+// import {BrowserRouter, Routes,Route,Link} from "react-router-dom";
+import Page1 from "./components/Page1";
+import Page2 from "./components/Page2";
+import Page3 from "./components/Page3";
+import Page4 from "./components/Page4";
+import {BrowserRouter,Routes,Route,Link} from "react-router-dom"
+
+
+
 // import CounterRedux from './components/CounterRedux';
 // import EventHandler from './components/EventHandler';
 
-const user={
-  name:"Krishnakanth",
-  city:"Bangalore",
-  area:"Whitefield",
-  block:2
-}
+// const user={
+//   name:"Krishnakanth",
+//   city:"Bangalore",
+//   area:"Whitefield",
+//   block:2
+// }
 function App() {
 //   const [data, setData] = useState([
     
@@ -84,16 +92,17 @@ function App() {
       
     
       <div>
+      
         {/* <Onchange/> */}
         {/* <Onsubmit/> */}
         {/* <Map/> */}
         {/* <Filter/> */}
         {/* <Fetch/> */}
         {/* <Axios/> */}
-        <FirstComp variable={user.name}/>
+        {/* <FirstComp variable={user.name}/>
         <SecondComp variable={user.area}/>
         <ThirdComp variable={user.block}/>
-        <FourthComp variable={user.city}/>
+        <FourthComp variable={user.city}/> */}
         
       
 
@@ -104,6 +113,21 @@ function App() {
         <button onClick={()=>setData(data+1)}>Increment</button>
         </center>
         </store.Provider> */}
+        {/* <BrowserRouter>
+        <div>
+          <li><Link to={'/'}>Home</Link></li>
+          <li><Link to ={'/Aboutpage'}>Abou</Link></li>
+          <li><Link to={'./Product page'}>Products</Link></li>
+          <li><Link to={'./Contactus'}>Contact</Link></li>
+        </div>
+        <Routes>
+          <Route path ='/' element={<Home/>}/>
+          <Route path='/Aboutpage' element={<About/>}/>
+          <Route path='/Product page' element={<Product/>}/>
+          <Route path = '/Contactus' element={<Contact/>}/>
+
+        </Routes>
+        </BrowserRouter> */}
         
         
 
@@ -117,22 +141,22 @@ function App() {
   
    
            {/* <MemoHook/> */}
-      {/* <BrowserRouter> */}
-            
-      {/* <div>
-          <li><Link to={'/'}>Home</Link></li>
-          <li><Link to={'/About'}>About us</Link></li>
-          <li><Link to={'/Contact'}>Contact us</Link></li>
-          <li><Link to={'/Prodcts'}>Prodcts List</Link></li>
-        </div> */}
-        {/* <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Prodcts" element={<Prodcts />} />
-        </Routes>
+
+    {/* <CounterRedux/>  */}
+    <BrowserRouter>
+    <div>
+      <li><Link to={'/'}>First Page</Link></li>
+      <li><Link to={'/Page2'}>Second Page</Link></li>
+      <li><Link to={'/Page3'}>Third Page</Link></li>
+      <li><Link to={'/Page4'}>Fourth Page</Link></li>
+    </div>
+    <Routes>
+   <Route path={'/'} element={<Page1/>}/>
+   <Route path ={'/Page2'} element={<Page2/>}/>
+   <Route path={'/Page3'} element={<Page3/>}/>
+   <Route path={'/Page4'} element={<Page4/>}/>
+    </Routes>
     </BrowserRouter>
-    <CounterRedux/>  */}
     </div>
 
  
